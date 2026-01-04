@@ -1,4 +1,4 @@
-# Resume Analyzer Phase 1
+# Resume Analyzer Skill Sync Phase 1
 A Resume Analyzer web application built using FastAPI and spaCy.
 This project allows users to upload resumes (PDF / DOCX) and extract useful information.
 
