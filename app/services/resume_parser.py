@@ -43,9 +43,7 @@ def extract_text_from_file(file) -> str:
     else:
         raise ValueError("Unsupported file type. Use PDF or DOCX.")
 
-    # -----------------------------
-    # ✅ SAFE NORMALIZATION
-    # -----------------------------
+    # SAFE NORMALIZATION
 
     # Normalize whitespace (but keep content)
     text = re.sub(r'[ \t]+', ' ', text)
