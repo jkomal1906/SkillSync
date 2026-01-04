@@ -1,5 +1,5 @@
 DATABASE_URL = (
-    "mssql+pyodbc://LAPTOP-NE96B3JP\\SQLEXPRESS/SkillSyncDB"
+    "mssql+pyodbc://User Your Server Name/SkillSyncDB"
     "?driver=ODBC+Driver+17+for+SQL+Server"
     "&trusted_connection=yes"
 )
