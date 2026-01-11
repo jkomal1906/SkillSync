@@ -1,12 +1,13 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, DateTime, Text
+from datetime import datetime
+from app.db.base import Base
 
-Base = declarative_base()
 
 class JobPosting(Base):
     __tablename__ = "JobPostings"
 
-    Id = Column(Integer, primary_key=True, index=True)
-    JobTitle = Column(String)
-    Skills = Column(String)
-    JobDescription = Column(String)
+    id = Column(Integer, primary_key=True, index=True)
+    job_title = Column(String(150), nullable=False)
+    skills = Column(Text, nullable=False)
+    description = Column(Text, nullable=False)
+    posted_date = Column(DateTime, default=datetime.utcnow)
