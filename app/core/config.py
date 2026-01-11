@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 settings = Settings()
 
 DATABASE_URL = (
-    "mssql+pyodbc://LAPTOP-NE96B3JP\\SQLEXPRESS/SkillSyncDB"
+    "mssql+pyodbc://Your Database Name"
     "?driver=ODBC+Driver+17+for+SQL+Server"
     "&trusted_connection=yes"
 )
